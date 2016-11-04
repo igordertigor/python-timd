@@ -6,6 +6,14 @@ class "Measure" that does two things:
         level)
     2. It stores the execution time for later evaluation
 
+
+## Installation
+
+You can install timd using pip:
+
+    pip install timd
+
+
 ## Examples
 
 For the examples below, I'll pipe stderr to stdout, so that the below examples
