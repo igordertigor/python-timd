@@ -4,7 +4,7 @@ import logging
 
 class Measure(object):
 
-    def __init__(self, msg, logger=logging):
+    def __init__(self, msg='Execution took {}s', logger=logging):
         self.msg = msg
         self.logger = logger
         self.times = []
