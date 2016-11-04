@@ -1,7 +1,7 @@
 import unittest
 from unittest import mock
 
-from tim.measure import Measure
+from timd.measure import Measure
 
 
 class TestMeasure(unittest.TestCase):
@@ -33,4 +33,3 @@ class TestMeasure(unittest.TestCase):
 
         self.assertEqual(len(m.times), 1)
         self.assertEqual(m.times[0], 1)
-

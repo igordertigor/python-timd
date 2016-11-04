@@ -1,7 +1,7 @@
 """
-# tim a simplified way to time your python applications
+# timd a simplified way to time your python applications
 
-Tim provides a simple way of timing segments of your code by providing a single
+Timd provides a simple way of timing segments of your code by providing a single
 class "Measure" that does two things:
     1. It writes the execution duration of your code as a log message (at info
         level)
@@ -18,9 +18,9 @@ The following is some setup code:
 
 ### Example 1: Using context manager for logging
 
-tim is best illustrated using examples
+timd is best illustrated using examples
 
-    >>> from tim import Measure
+    >>> from timd import Measure
     >>> logging.basicConfig(level=logging.INFO)
     >>> with Measure():
     ...     x = sum([4]*1000)                               # doctest: +ELLIPSIS
@@ -31,7 +31,7 @@ tim is best illustrated using examples
 
 We can also decorate functions with a `Measure`:
 
-    >>> from tim import Measure
+    >>> from timd import Measure
     >>> @Measure()
     ... def myfunction():
     ...     return sum([4]*1000)
@@ -48,7 +48,7 @@ In some cases, we want to track times associated with different types of
 operations. This following example illustrates a more complex use of
 different `Measure` objects:
 
-    >>> from tim import Measure
+    >>> from timd import Measure
     >>> logger = logging.getLogger('times')
     >>> trackers = {'printing': Measure('Printing took {}s', logger),
     ...             'logical operations': Measure('Logical operation took {}s',
@@ -89,7 +89,7 @@ tracked:
 
 __version__ = '0.0.1'
 
-from tim.measure import Measure
+from timd.measure import Measure
 
 if __name__ == "__main__":
     import doctest

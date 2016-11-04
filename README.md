@@ -1,2 +1,2 @@
-# python-tim
+# python-timd
 simple timing functionality
