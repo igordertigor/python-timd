@@ -99,3 +99,8 @@ tracked:
     >>> print('Time spent printing: {}s, Time spent with logic: {}s'.format(
     ...     total_printing, total_logic))                   # doctest: +ELLIPSIS
     Time spent printing: ...s, Time spent with logic: ...s
+
+
+## Tests
+
+Test status on master: ![test status](https://travis-ci.org/igordertigor/python-timd.svg?branch=master)
