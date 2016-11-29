@@ -6,3 +6,4 @@ python:
     - 3.5
 script:
     python -m unittest discover tests
+    python -m doctest timd/measure.py
