@@ -10,6 +10,10 @@ class Measure(object):
         self.times = []
         self.t0 = None
 
+    def __str__(self):
+        return ('timd.Measure: best of {} runs took {}s'
+                .format(len(self.times), min(self.times)))
+
     def __enter__(self):
         self.t0 = time.time()
 
